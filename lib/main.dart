@@ -4,7 +4,9 @@ import 'package:geolocator/geolocator.dart';
 import 'package:weather_app/bloc/weather_bloc_bloc.dart';
 import 'package:weather_app/screens/home_screen.dart';
 import '../data/my_data.dart';
-void main() {
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+void main() async {
+  await dotenv.load();
   runApp(const MyApp());
 }
 class MyApp extends StatelessWidget {

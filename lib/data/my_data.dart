@@ -1,1 +1,3 @@
-String API_KEY="692336aa75408771a35caa48fa6bbc78";
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+
+String get apiKey => dotenv.env['API_KEY']!;
